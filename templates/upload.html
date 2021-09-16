@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<center>
+<form action="{{ url_for('predict')}}" method="post">
+
+    <H1>ENTER YOUR MARKS</H1>
+    <input class="number" type="number" name="mathematics" placeholder="MATHEMATICS" max="100" required=""><br>
+
+    <input class="number" type="number" name="physics" placeholder="PHYSICS" max="100" required=""><br>
+
+    <input class="number" type="number" name="chemistry" placeholder="CHEMISTRY" max="100" required=""><br>
+
+    <input class="number" type="number" name="biology" placeholder="BIOLOGY" max="100" required=""><br>
+
+    <input class="number" type="number" name="english" placeholder="ENGLISH" max="100" required=""><br>
+
+    <input class="number" type="number" name="malayalam" placeholder="MALAYALAM" max="100" required=""><br>
+
+    <input class="number" type="number" name="history" placeholder="HISTORY" max="100" required=""><br>
+
+    <input class="number" type="number" name="arts" placeholder="ARTS" max="100" required=""><br>
+
+    <input class="number" type="number" name="sports" placeholder="SPORTS" max="100" required=""><br>
+
+    <label for="conduct">CONDUCT:</label>
+    <select name="conduct" id="conduct">
+        <option value=3>EXCELLENT</option>
+        <option value=1>GOOD</option>
+        <option value=0>AVERAGE</option>
+        <option value=2>BAD</option></select><br>
+
+
+
+        <input type="submit" value="UPLOAD">
+</form>
+</center>
+ {% endblock %}
